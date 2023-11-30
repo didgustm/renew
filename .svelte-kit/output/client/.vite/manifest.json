@@ -6,7 +6,7 @@
       ".svelte-kit/generated/client-optimized/nodes/2.js",
       ".svelte-kit/generated/client-optimized/nodes/3.js"
     ],
-    "file": "_app/immutable/entry/app.31159b8c.js",
+    "file": "_app/immutable/entry/app.5799ee01.js",
     "imports": [
       "_preload-helper.a4192956.js",
       "_scheduler.2bfa17be.js",
@@ -27,23 +27,23 @@
     "css": [
       "_app/immutable/assets/0.2a5bc55b.css"
     ],
-    "file": "_app/immutable/nodes/0.6e08031b.js",
+    "file": "_app/immutable/nodes/0.d1849c5e.js",
     "imports": [
       "_scheduler.2bfa17be.js",
       "_index.4e1a926f.js",
       "_globals.7f7f1b26.js",
-      "_stores.62a875e7.js"
+      "_stores.d94712a2.js"
     ],
     "isDynamicEntry": true,
     "isEntry": true,
     "src": ".svelte-kit/generated/client-optimized/nodes/0.js"
   },
   ".svelte-kit/generated/client-optimized/nodes/1.js": {
-    "file": "_app/immutable/nodes/1.a5c22186.js",
+    "file": "_app/immutable/nodes/1.ab18c988.js",
     "imports": [
       "_scheduler.2bfa17be.js",
       "_index.4e1a926f.js",
-      "_stores.62a875e7.js"
+      "_stores.d94712a2.js"
     ],
     "isDynamicEntry": true,
     "isEntry": true,
@@ -91,6 +91,26 @@
     "src": ".svelte-kit/generated/client-optimized/nodes/3.css"
   },
   ".svelte-kit/generated/client-optimized/nodes/3.js": {
+    "assets": [
+      "_app/immutable/assets/isabang3_view.3837d08a.webp",
+      "_app/immutable/assets/fasttrack_view.4f3f9a88.webp",
+      "_app/immutable/assets/petfly_view.79a97290.webp",
+      "_app/immutable/assets/evlabs_view.5a287b8a.webp",
+      "_app/immutable/assets/isabang2_view.f642df79.webp",
+      "_app/immutable/assets/blacklabel_view.023041b9.webp",
+      "_app/immutable/assets/alevel_view.6db03a9f.webp",
+      "_app/immutable/assets/classeum_view.c136c421.webp",
+      "_app/immutable/assets/goldclass_view.ddfe6e82.webp",
+      "_app/immutable/assets/slimcare_view.877c3128.webp",
+      "_app/immutable/assets/corevac_view.2316d6cb.webp",
+      "_app/immutable/assets/fastdealer_view.97796d91.webp",
+      "_app/immutable/assets/fasthunter_view.bea42fc0.webp",
+      "_app/immutable/assets/airclean_view.7f56f4ff.webp",
+      "_app/immutable/assets/calendar_view.30b1ef8a.webp",
+      "_app/immutable/assets/todo_view.a076baff.webp",
+      "_app/immutable/assets/chart_view.6af3f10f.webp",
+      "_app/immutable/assets/isabang_view.9310b79f.webp"
+    ],
     "css": [
       "_app/immutable/assets/3.1a35df07.css"
     ],
@@ -141,7 +161,7 @@
       "src/routes/list/swiper.md",
       "src/routes/list/todo.md"
     ],
-    "file": "_app/immutable/nodes/3.12a76067.js",
+    "file": "_app/immutable/nodes/3.3d8cfe81.js",
     "imports": [
       "_preload-helper.a4192956.js",
       "_scheduler.2bfa17be.js",
@@ -152,10 +172,10 @@
     "src": ".svelte-kit/generated/client-optimized/nodes/3.js"
   },
   ".yarn/unplugged/@sveltejs-kit-virtual-0bbe395435/node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/entry/start.0a854077.js",
+    "file": "_app/immutable/entry/start.3c9f6d5e.js",
     "imports": [
       "_scheduler.2bfa17be.js",
-      "_singletons.21f2c1bb.js"
+      "_singletons.054800a5.js"
     ],
     "isEntry": true,
     "src": ".yarn/unplugged/@sveltejs-kit-virtual-0bbe395435/node_modules/@sveltejs/kit/src/runtime/client/start.js"
@@ -175,16 +195,16 @@
   "_scheduler.2bfa17be.js": {
     "file": "_app/immutable/chunks/scheduler.2bfa17be.js"
   },
-  "_singletons.21f2c1bb.js": {
-    "file": "_app/immutable/chunks/singletons.21f2c1bb.js",
+  "_singletons.054800a5.js": {
+    "file": "_app/immutable/chunks/singletons.054800a5.js",
     "imports": [
       "_scheduler.2bfa17be.js"
     ]
   },
-  "_stores.62a875e7.js": {
-    "file": "_app/immutable/chunks/stores.62a875e7.js",
+  "_stores.d94712a2.js": {
+    "file": "_app/immutable/chunks/stores.d94712a2.js",
     "imports": [
-      "_singletons.21f2c1bb.js"
+      "_singletons.054800a5.js"
     ]
   },
   "src/assets/fonts/Montserrat-vf.woff": {
@@ -262,6 +282,78 @@
   "src/assets/images/thumnail/slimcare.jpg": {
     "file": "_app/immutable/assets/slimcare.25766449.jpg",
     "src": "src/assets/images/thumnail/slimcare.jpg"
+  },
+  "src/assets/images/view/airclean_view.webp": {
+    "file": "_app/immutable/assets/airclean_view.7f56f4ff.webp",
+    "src": "src/assets/images/view/airclean_view.webp"
+  },
+  "src/assets/images/view/alevel_view.webp": {
+    "file": "_app/immutable/assets/alevel_view.6db03a9f.webp",
+    "src": "src/assets/images/view/alevel_view.webp"
+  },
+  "src/assets/images/view/blacklabel_view.webp": {
+    "file": "_app/immutable/assets/blacklabel_view.023041b9.webp",
+    "src": "src/assets/images/view/blacklabel_view.webp"
+  },
+  "src/assets/images/view/calendar_view.webp": {
+    "file": "_app/immutable/assets/calendar_view.30b1ef8a.webp",
+    "src": "src/assets/images/view/calendar_view.webp"
+  },
+  "src/assets/images/view/chart_view.webp": {
+    "file": "_app/immutable/assets/chart_view.6af3f10f.webp",
+    "src": "src/assets/images/view/chart_view.webp"
+  },
+  "src/assets/images/view/classeum_view.webp": {
+    "file": "_app/immutable/assets/classeum_view.c136c421.webp",
+    "src": "src/assets/images/view/classeum_view.webp"
+  },
+  "src/assets/images/view/corevac_view.webp": {
+    "file": "_app/immutable/assets/corevac_view.2316d6cb.webp",
+    "src": "src/assets/images/view/corevac_view.webp"
+  },
+  "src/assets/images/view/evlabs_view.webp": {
+    "file": "_app/immutable/assets/evlabs_view.5a287b8a.webp",
+    "src": "src/assets/images/view/evlabs_view.webp"
+  },
+  "src/assets/images/view/fastdealer_view.webp": {
+    "file": "_app/immutable/assets/fastdealer_view.97796d91.webp",
+    "src": "src/assets/images/view/fastdealer_view.webp"
+  },
+  "src/assets/images/view/fasthunter_view.webp": {
+    "file": "_app/immutable/assets/fasthunter_view.bea42fc0.webp",
+    "src": "src/assets/images/view/fasthunter_view.webp"
+  },
+  "src/assets/images/view/fasttrack_view.webp": {
+    "file": "_app/immutable/assets/fasttrack_view.4f3f9a88.webp",
+    "src": "src/assets/images/view/fasttrack_view.webp"
+  },
+  "src/assets/images/view/goldclass_view.webp": {
+    "file": "_app/immutable/assets/goldclass_view.ddfe6e82.webp",
+    "src": "src/assets/images/view/goldclass_view.webp"
+  },
+  "src/assets/images/view/isabang2_view.webp": {
+    "file": "_app/immutable/assets/isabang2_view.f642df79.webp",
+    "src": "src/assets/images/view/isabang2_view.webp"
+  },
+  "src/assets/images/view/isabang3_view.webp": {
+    "file": "_app/immutable/assets/isabang3_view.3837d08a.webp",
+    "src": "src/assets/images/view/isabang3_view.webp"
+  },
+  "src/assets/images/view/isabang_view.webp": {
+    "file": "_app/immutable/assets/isabang_view.9310b79f.webp",
+    "src": "src/assets/images/view/isabang_view.webp"
+  },
+  "src/assets/images/view/petfly_view.webp": {
+    "file": "_app/immutable/assets/petfly_view.79a97290.webp",
+    "src": "src/assets/images/view/petfly_view.webp"
+  },
+  "src/assets/images/view/slimcare_view.webp": {
+    "file": "_app/immutable/assets/slimcare_view.877c3128.webp",
+    "src": "src/assets/images/view/slimcare_view.webp"
+  },
+  "src/assets/images/view/todo_view.webp": {
+    "file": "_app/immutable/assets/todo_view.a076baff.webp",
+    "src": "src/assets/images/view/todo_view.webp"
   },
   "src/routes/list/24fly.md": {
     "file": "_app/immutable/chunks/24fly.19290680.js",
