@@ -1,0 +1,1 @@
+export { default as component } from "../../../../.yarn/unplugged/@sveltejs-kit-virtual-0bbe395435/node_modules/@sveltejs/kit/src/runtime/components/error.svelte";
