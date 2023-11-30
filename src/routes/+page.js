@@ -1,4 +1,4 @@
-// +page.js
+// routse > page
 export const load = async ({ fetch }) => {
     const response = await fetch(`api`)
     const lists = await response.json();

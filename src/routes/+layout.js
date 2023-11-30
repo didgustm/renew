@@ -1,4 +1,4 @@
-// +layout.js
+// routes > layout
 export const ssr = false;
 export const prerender = false;
 

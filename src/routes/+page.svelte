@@ -1,4 +1,4 @@
-<!-- +page.svelte -->
+<!-- routes > page -->
 <script>
     import { onMount } from 'svelte'
     import '@scss/index/style.scss'

@@ -1,4 +1,4 @@
-<!-- +layout.svelte -->
+﻿<!-- routes > layout -->
 <script>
     import { navigating } from '$app/stores'
     import { fade } from 'svelte/transition'
