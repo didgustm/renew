@@ -1,0 +1,1 @@
+import{s as e}from"./scheduler.2bfa17be.js";import{S as a,i as o}from"./index.4e1a926f.js";const l={id:2,title:"청개구리LABS",caption:"당신의 인생역전 프로젝트",url:"https://leaderscpa.com/merchant/chunginlabs3/",category:"Stock",device:"PC, Mobile"};class c extends a{constructor(t){super(),o(this,t,null,null,e,{})}}export{c as default,l as metadata};

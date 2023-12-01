@@ -1,5 +1,4 @@
-// js/utils.js
-
+// js > utils
 import { gsap } from 'gsap';
 
 export const setGridLayout = (items, w) => {
@@ -63,7 +62,7 @@ export const observation = (node, params) => {
             mo = target.querySelector('a');
             
             originTarget.setAttribute('src', originTarget.dataset.src);
-            gsap.to(mo, {opacity:1, y:0, duration:1})
+            gsap.to(mo, {opacity:1, y:0, duration:0.8, delay:0.3})
             observer.unobserve(target);
         })
     }

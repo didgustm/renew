@@ -6,7 +6,7 @@ yarn set version berry
 
 yarn dlx @yarnpkg/sdks vscode
 
-- vite.config Ãß°¡
+- vite.config ì¶”ê°€
 server: {
     fs: {
         allow: ['..']

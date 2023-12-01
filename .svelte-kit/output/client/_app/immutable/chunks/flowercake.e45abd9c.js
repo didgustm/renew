@@ -1,0 +1,1 @@
+import{s as t}from"./scheduler.2bfa17be.js";import{S as a,i as o}from"./index.4e1a926f.js";const c={id:26,title:"우리플라워케이크",caption:"공방. 소자본. 1인창업",url:"https://leaderscpa.com/merchant/flowercake/",category:"Etc",device:"PC, Mobile"};class i extends a{constructor(e){super(),o(this,e,null,null,t,{})}}export{i as default,c as metadata};

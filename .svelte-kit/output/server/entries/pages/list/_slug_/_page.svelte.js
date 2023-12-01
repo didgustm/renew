@@ -20,41 +20,90 @@ const corevac = "/_app/immutable/assets/corevac_view.2316d6cb.webp";
 const fastdealer = "/_app/immutable/assets/fastdealer_view.97796d91.webp";
 const fasthunter = "/_app/immutable/assets/fasthunter_view.bea42fc0.webp";
 const airclean = "/_app/immutable/assets/airclean_view.7f56f4ff.webp";
-const calendar = "/_app/immutable/assets/calendar_view.30b1ef8a.webp";
-const todo = "/_app/immutable/assets/todo_view.a076baff.webp";
 const chart = "/_app/immutable/assets/chart_view.6af3f10f.webp";
 const isabang = "/_app/immutable/assets/isabang_view.9310b79f.webp";
+const jejuchanga = "/_app/immutable/assets/jejuchanga_view.52d411ae.webp";
+const stake = "/_app/immutable/assets/stake_view.0927ddfa.webp";
+const lotto = "/_app/immutable/assets/lotto_view.994e5b35.webp";
+const flowercake = "/_app/immutable/assets/flowercake_view.21487a2b.webp";
+const calendar = "/_app/immutable/assets/calendar_view.30b1ef8a.webp";
+const todo = "/_app/immutable/assets/todo_view.a076baff.webp";
+const afly = "/_app/immutable/assets/afly_view.b62f53a5.webp";
+const bjp = "/_app/immutable/assets/bjp_view.111c0642.webp";
+const finco = "/_app/immutable/assets/finco_view.3fa75a11.webp";
+const fullpage = "/_app/immutable/assets/fullpage_view.0d1c2db7.webp";
+const license = "/_app/immutable/assets/license_view.d36cdfba.webp";
+const jamong = "/_app/immutable/assets/jamong_view.37863c50.webp";
+const playup = "/_app/immutable/assets/playup_view.f52603d6.webp";
+const pyeongtaek = "/_app/immutable/assets/pyeongtaek_view.9280895f.webp";
+const sort = "/_app/immutable/assets/sort_view.eda25a33.webp";
+const swiper = "/_app/immutable/assets/swiper_view.3261fd31.webp";
+const publing = "/_app/immutable/assets/publing_view.454f5fad.webp";
+const hersit = "/_app/immutable/assets/hersit_view.9fbba929.webp";
+const hankyung = "/_app/immutable/assets/hankyung_view.4706acce.webp";
+const mentor = "/_app/immutable/assets/mentor_view.0556e231.webp";
+const lawadviser = "/_app/immutable/assets/lawadviser_view.c88416e5.webp";
+const isearch = "/_app/immutable/assets/isearch_view.ff7ab3d6.webp";
+const cpa = "/_app/immutable/assets/cpa_view.47484071.webp";
+const makefly = "/_app/immutable/assets/makefly_view.5834ce34.webp";
+const linefly = "/_app/immutable/assets/linefly_view.9dcf9fe0.webp";
+const kanghan = "/_app/immutable/assets/kanghan_view.b28c109e.webp";
+const implant = "/_app/immutable/assets/implant_view.a2c990e6.webp";
+const chungin = "/_app/immutable/assets/chungin_view.fbae9e11.webp";
+const isafly = "/_app/immutable/assets/24fly_view.b2db7f17.webp";
 const views = [
   isabang3,
   fasttrack,
-  petfly,
   evlabs,
+  petfly,
   isabang2,
+  slimcare,
+  goldclass,
   blacklabel,
   alevel,
-  classeum,
-  goldclass,
-  slimcare,
   corevac,
+  airclean,
+  isabang,
+  jejuchanga,
   fastdealer,
   fasthunter,
-  airclean,
+  classeum,
+  stake,
+  chart,
+  lotto,
+  flowercake,
   calendar,
   todo,
-  chart,
-  isabang
+  afly,
+  bjp,
+  finco,
+  fullpage,
+  license,
+  jamong,
+  playup,
+  pyeongtaek,
+  sort,
+  swiper,
+  publing,
+  hersit,
+  hankyung,
+  mentor,
+  lawadviser,
+  isearch,
+  cpa,
+  makefly,
+  linefly,
+  kanghan,
+  implant,
+  chungin,
+  isafly
 ];
 const View = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { data } = $$props;
-  const title = data.currentRoute.slice(6);
-  let num = views.filter((x, index) => {
-    if (x.indexOf(title) !== -1) {
-      return index;
-    }
-  });
+  const arr = [...views].reverse(), src = arr[data.id - 1];
   if ($$props.data === void 0 && $$bindings.data && data !== void 0)
     $$bindings.data(data);
-  return `  <section class="section view"><div class="area"><div class="container"><div class="view_img"><img${add_attribute("src", num[0], 0)} alt=""></div></div></div></section>`;
+  return `  <section class="section view"><div class="area"><div class="container"><div class="view_img"><img${add_attribute("src", src, 0)}${add_attribute("alt", data.title, 0)}></div></div></div></section>`;
 });
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { data } = $$props;

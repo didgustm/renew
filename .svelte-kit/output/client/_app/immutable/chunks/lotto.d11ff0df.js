@@ -1,0 +1,1 @@
+import{s as o}from"./scheduler.2bfa17be.js";import{S as e,i as l}from"./index.4e1a926f.js";const n={id:27,title:"로또플라이",caption:"로또 번호 무료 제작 서비스",url:"https://lottofly.co.kr/m/",category:"Etc",device:"Moblie only"};class r extends e{constructor(t){super(),l(this,t,null,null,o,{})}}export{r as default,n as metadata};
