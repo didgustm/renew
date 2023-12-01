@@ -56,7 +56,7 @@ export const fetchMarkdownPosts = async () => {
 export const observation = (node, params) => {
     function io(entries){
         entries.forEach(x => {
-            if(!x.isIntersecting) return;
+            if(!x.isIntersecting && !x.boundingClientRect.y > 0) return;
             const { target } = x,
             originTarget = target.querySelector('img'),
             mo = target.querySelector('a');
