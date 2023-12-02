@@ -2,6 +2,7 @@
 <script>
     import { navigating } from '$app/stores'
     import { fade } from 'svelte/transition'
+    import Lenis from '@studio-freight/lenis'
     import '@scss/common/common.scss'
     import icon from '@images/top.png'
     import Header from '@comp/Header.svelte'
@@ -12,6 +13,16 @@
     function onclick(){
         window.scrollTo({top:0, behavior:'smooth'});
     }
+    
+    // Lenis
+    const lenis = new Lenis({
+		duration: 0.6
+	});
+	function raf(time){
+		lenis.raf(time);
+		requestAnimationFrame(raf)
+	}
+	requestAnimationFrame(raf);
 </script>
 
 <svelte:head>

@@ -4,6 +4,19 @@
 @import './reset';
 
 /**** default ****/
+.viewport{
+    position:relative;
+    height:100vh;
+    overflow:scroll;
+    scrollbar-width:none
+}
+.viewport::-webkit-scrollbar{
+    display:none
+}
+.v-scrollbar{
+    --svrollbar-thumb-background:#ed6075;
+    z-index:99
+}
 html{
     font-size: 62.5%;
     font-family: 'Mont', 'Pre';

@@ -268,6 +268,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@studio-freight/lenis@npm:^1.0.29":
+  version: 1.0.29
+  resolution: "@studio-freight/lenis@npm:1.0.29"
+  checksum: 97ec00d61ef572a151f00c69a022d80a7c22998b90c933da05b496da7bc8774555603cb0c92dadc4067780f00eea64765931664d459ab4ec69ffd5013895e236
+  languageName: node
+  linkType: hard
+
 "@sveltejs/adapter-auto@npm:^2.0.0":
   version: 2.1.1
   resolution: "@sveltejs/adapter-auto@npm:2.1.1"
@@ -1847,6 +1854,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"svrollbar@npm:^0.12.0":
+  version: 0.12.0
+  resolution: "svrollbar@npm:0.12.0"
+  checksum: 323f5ca31d96dc11f34b47bf964215163a637b8323dd08283527db57f68f12e400d6ca77dd1831ef17c53e15f23629e40edb4691fcfe9e5d4c94c9c77699c00c
+  languageName: node
+  linkType: hard
+
 "tar@npm:^6.1.11, tar@npm:^6.1.2":
   version: 6.2.0
   resolution: "tar@npm:6.2.0"
@@ -1937,6 +1951,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "vite-project@workspace:."
   dependencies:
+    "@studio-freight/lenis": "npm:^1.0.29"
     "@sveltejs/adapter-auto": "npm:^2.0.0"
     "@sveltejs/adapter-static": "npm:^2.0.3"
     "@sveltejs/kit": "npm:^1.27.4"
@@ -1945,6 +1960,7 @@ __metadata:
     sass: "npm:^1.69.5"
     svelte: "npm:^4.2.7"
     svelte-preprocess: "npm:^5.1.1"
+    svrollbar: "npm:^0.12.0"
     vite: "npm:^4.4.2"
   languageName: unknown
   linkType: soft

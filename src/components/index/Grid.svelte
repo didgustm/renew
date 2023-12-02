@@ -5,7 +5,7 @@
     export let data, items
 </script>
 
-<ul class="grid" use:observation={{rootMargin: '-150px'}}>
+<ul class="grid" use:observation={{rootMargin: '-100px'}}>
     {#each data.lists as list, idx}
     <li class="item" data-sort="{list.meta.category}" bind:this={items[idx]}>
         <a href="{list.path}">
