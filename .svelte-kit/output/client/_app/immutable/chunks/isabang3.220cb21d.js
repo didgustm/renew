@@ -1,0 +1,1 @@
+import{s as a}from"./scheduler.b160212f.js";import{S as e,i as s}from"./index.be747948.js";const l={id:45,title:"이사방3",caption:"리얼 이사 매칭 비교견적 서비스",url:"https://leaderscpa.com/merchant/isabang3/",category:"Life",device:"PC, Mobile"};class r extends e{constructor(t){super(),s(this,t,null,null,a,{})}}export{r as default,l as metadata};

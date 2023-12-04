@@ -1,1 +1,0 @@
-import{s as o}from"./scheduler.2bfa17be.js";import{S as e,i as s}from"./index.4e1a926f.js";const d={id:24,title:"Todo List",caption:"svelte code",url:"https://didgustm.github.io/todo_svelte/",category:"Etc",device:"PC only"};class n extends e{constructor(t){super(),s(this,t,null,null,o,{})}}export{n as default,d as metadata};
