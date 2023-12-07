@@ -6,6 +6,7 @@ const Top = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$bindings.data(data);
   return `  <section class="top"><article class="container"><p class="caption ts-up">${escape(data.caption)}</p> <h2 class="title"><div><p>${escape(data.title)}</p></div></h2> <a${add_attribute("href", data.url, 0)} class="url ts-up" target="_blank">${escape(data.url)}</a> <div class="category ts-up"><p>${escape(data.category)}</p> <span data-svelte-h="svelte-1j4g6zq">⋅</span> <p>${escape(data.device)}</p></div></article></section>`;
 });
+const template01 = "/_app/immutable/assets/template01_view.7ba47da5.webp";
 const isabang3 = "/_app/immutable/assets/isabang3_view.3837d08a.webp";
 const fasttrack = "/_app/immutable/assets/fasttrack_view.4f3f9a88.webp";
 const petfly = "/_app/immutable/assets/petfly_view.79a97290.webp";
@@ -52,6 +53,7 @@ const implant = "/_app/immutable/assets/implant_view.a2c990e6.webp";
 const chungin = "/_app/immutable/assets/chungin_view.fbae9e11.webp";
 const isafly = "/_app/immutable/assets/24fly_view.b2db7f17.webp";
 const views = [
+  template01,
   isabang3,
   fasttrack,
   evlabs,

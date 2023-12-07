@@ -1,3 +1,4 @@
+import template from '@images/thumnail/template.jpg'
 import isabang3 from '@images/thumnail/isabang3.jpg'
 import fasttrack from '@images/thumnail/fasttrack.jpg'
 import petfly from '@images/thumnail/petfly.jpg'
@@ -42,6 +43,7 @@ import chungin from '@images/thumnail/chungin.jpg'
 import isafly from '@images/thumnail/24fly.jpg'
 
 export const thumnails = [
+    template,
     isabang3,
     fasttrack,
     evlabs,

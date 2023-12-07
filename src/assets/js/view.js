@@ -1,3 +1,4 @@
+import template01 from '@images/view/template01_view.webp';
 import isabang3 from '@images/view/isabang3_view.webp';
 import fasttrack from '@images/view/fasttrack_view.webp';
 import petfly from '@images/view/petfly_view.webp';
@@ -45,6 +46,7 @@ import chungin from '@images/view/chungin_view.webp'
 import isafly from '@images/view/24fly_view.webp'
 
 export const views = [
+    template01,
     isabang3,
     fasttrack,
     evlabs,

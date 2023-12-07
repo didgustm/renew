@@ -96,6 +96,7 @@
       "src/routes/list/sort.md",
       "src/routes/list/stake.md",
       "src/routes/list/swiper.md",
+      "src/routes/list/template01.md",
       "src/routes/list/todo.md"
     ],
     "file": "chunks/utils.js"
@@ -213,7 +214,7 @@
     "src": "src/assets/images/thumnail/jejuchanga.jpg"
   },
   "src/assets/images/thumnail/js.jpg": {
-    "file": "_app/immutable/assets/js.f845a25b.jpg",
+    "file": "_app/immutable/assets/js.eb3e8b64.jpg",
     "src": "src/assets/images/thumnail/js.jpg"
   },
   "src/assets/images/thumnail/kanghan.jpg": {
@@ -259,6 +260,10 @@
   "src/assets/images/thumnail/stake.jpg": {
     "file": "_app/immutable/assets/stake.b4ea4f31.jpg",
     "src": "src/assets/images/thumnail/stake.jpg"
+  },
+  "src/assets/images/thumnail/template.jpg": {
+    "file": "_app/immutable/assets/template.28b26d3d.jpg",
+    "src": "src/assets/images/thumnail/template.jpg"
   },
   "src/assets/images/view/24fly_view.webp": {
     "file": "_app/immutable/assets/24fly_view.b2db7f17.webp",
@@ -436,6 +441,10 @@
     "file": "_app/immutable/assets/swiper_view.81b064e2.webp",
     "src": "src/assets/images/view/swiper_view.webp"
   },
+  "src/assets/images/view/template01_view.webp": {
+    "file": "_app/immutable/assets/template01_view.7ba47da5.webp",
+    "src": "src/assets/images/view/template01_view.webp"
+  },
   "src/assets/images/view/todo_view.webp": {
     "file": "_app/immutable/assets/todo_view.a076baff.webp",
     "src": "src/assets/images/view/todo_view.webp"
@@ -477,6 +486,7 @@
   },
   "src/routes/+page.svelte": {
     "assets": [
+      "_app/immutable/assets/template.28b26d3d.jpg",
       "_app/immutable/assets/isabang3.8e6934ad.jpg",
       "_app/immutable/assets/fasttrack.8a463bfa.jpg",
       "_app/immutable/assets/petfly.00e1bd15.jpg",
@@ -492,7 +502,7 @@
       "_app/immutable/assets/fasthunter.e0081098.jpg",
       "_app/immutable/assets/airclean.6a9bb18e.jpg",
       "_app/immutable/assets/calendar.c4172ece.jpg",
-      "_app/immutable/assets/js.f845a25b.jpg",
+      "_app/immutable/assets/js.eb3e8b64.jpg",
       "_app/immutable/assets/isabang.988ece91.jpg",
       "_app/immutable/assets/jejuchanga.0062a899.jpg",
       "_app/immutable/assets/stake.b4ea4f31.jpg",
@@ -594,6 +604,7 @@
       "src/routes/list/sort.md",
       "src/routes/list/stake.md",
       "src/routes/list/swiper.md",
+      "src/routes/list/template01.md",
       "src/routes/list/todo.md"
     ],
     "file": "entries/pages/list/_slug_/_page.js",
@@ -602,6 +613,7 @@
   },
   "src/routes/list/[slug]/+page.svelte": {
     "assets": [
+      "_app/immutable/assets/template01_view.7ba47da5.webp",
       "_app/immutable/assets/isabang3_view.3837d08a.webp",
       "_app/immutable/assets/fasttrack_view.4f3f9a88.webp",
       "_app/immutable/assets/petfly_view.79a97290.webp",
@@ -1001,6 +1013,14 @@
     ],
     "isDynamicEntry": true,
     "src": "src/routes/list/swiper.md"
+  },
+  "src/routes/list/template01.md": {
+    "file": "chunks/template01.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/list/template01.md"
   },
   "src/routes/list/todo.md": {
     "file": "chunks/todo.js",

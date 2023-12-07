@@ -1,0 +1,1 @@
+import{s as e}from"./scheduler.b160212f.js";import{S as o,i as a}from"./index.be747948.js";const m={id:46,title:"Template01",caption:"랜딩페이지 PC 버전 템플릿",url:"http://didgustm12.dothome.co.kr/template01/",category:"Web",device:"PC only"};class n extends o{constructor(t){super(),a(this,t,null,null,e,{})}}export{n as default,m as metadata};
