@@ -1,4 +1,4 @@
-import { c as create_ssr_component, e as escape, a as add_attribute, v as validate_component } from "../../../../chunks/ssr.js";
+import { c as create_ssr_component, e as escape, b as add_attribute, v as validate_component } from "../../../../chunks/ssr.js";
 const style = "";
 const Top = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { data } = $$props;

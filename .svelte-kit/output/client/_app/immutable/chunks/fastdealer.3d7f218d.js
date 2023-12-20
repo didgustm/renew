@@ -1,1 +1,0 @@
-import{s as e}from"./scheduler.b160212f.js";import{S as a,i as o}from"./index.be747948.js";const n={id:32,title:"패스트헌터-딜러",caption:"고객을 가장 빨리 만날 수 있는 방법",url:"https://fasthunter.co.kr/dealer/",category:"Car",device:"Mobile only"};class i extends a{constructor(t){super(),o(this,t,null,null,e,{})}}export{i as default,n as metadata};

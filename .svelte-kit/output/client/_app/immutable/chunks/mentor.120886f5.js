@@ -1,1 +1,0 @@
-import{s as e}from"./scheduler.b160212f.js";import{S as o,i as a}from"./index.be747948.js";const l={id:10,title:"멘토데스크코리아",caption:"주식 리딩 서비스 제공 플랫폼",url:"https://leaderscpa.com/merchant/mentordesk/",category:"Stock",device:"PC, Mobile"};class c extends o{constructor(t){super(),a(this,t,null,null,e,{})}}export{c as default,l as metadata};

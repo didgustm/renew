@@ -1,1 +1,0 @@
-import{s as e}from"./scheduler.b160212f.js";import{S as a,i as o}from"./index.be747948.js";const n={id:35,title:"8282에어크린",caption:"에어컨 / 세탁기 청소 전문업체",url:"https://8282airclean.com",category:"Life",device:"PC, Mobile"};class r extends a{constructor(t){super(),o(this,t,null,null,e,{})}}export{r as default,n as metadata};

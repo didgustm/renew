@@ -1,0 +1,1 @@
+import{s as e}from"./scheduler.2bfa17be.js";import{S as a,i as s}from"./index.5b7eef27.js";const l={id:9,title:"로우어드바이저",caption:"개인회생/파산 비공개 상담요청",url:"https://lawadviser.co.kr/",category:"Life",device:"PC, Mobile"};class n extends a{constructor(t){super(),s(this,t,null,null,e,{})}}export{n as default,l as metadata};

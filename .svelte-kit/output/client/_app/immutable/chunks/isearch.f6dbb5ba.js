@@ -1,1 +1,0 @@
-import{s as t}from"./scheduler.b160212f.js";import{S as a,i as s}from"./index.be747948.js";const i={id:8,title:"아이써치마케팅",caption:"국내 최대 인스타그램 광고실행사",url:"https://leaderscpa.com/merchant/isearch/",category:"Web",device:"PC, Mobile"};class l extends a{constructor(e){super(),s(this,e,null,null,t,{})}}export{l as default,i as metadata};

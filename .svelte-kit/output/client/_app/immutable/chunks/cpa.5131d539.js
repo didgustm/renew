@@ -1,1 +1,0 @@
-import{s as t}from"./scheduler.b160212f.js";import{S as a,i as s}from"./index.be747948.js";const i={id:7,title:"리더스CPA",caption:"가장 간편하고 쉬운 마케팅",url:"https://leaderscpa.com/leaderscpa/",category:"Web",device:"PC, Mobile"};class c extends a{constructor(e){super(),s(this,e,null,null,t,{})}}export{c as default,i as metadata};

@@ -1,1 +1,0 @@
-import{s as t}from"./scheduler.b160212f.js";import{S as a,i as o}from"./index.be747948.js";const i={id:33,title:"제주찬가",caption:"제주 단독주택 전문 브랜드",url:"https://leaderscpa.com/merchant/jejuchanga/",category:"Life",device:"PC, Mobile"};class l extends a{constructor(e){super(),o(this,e,null,null,t,{})}}export{l as default,i as metadata};

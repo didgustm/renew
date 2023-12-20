@@ -1,1 +1,0 @@
-import{s as e}from"./scheduler.b160212f.js";import{S as o,i}from"./index.be747948.js";const n={id:5,title:"라인플라이",caption:"초고속 인터넷가입 비교견적",url:"https://linefly.co.kr/",category:"Life",device:"PC, Mobile"};class r extends o{constructor(t){super(),i(this,t,null,null,e,{})}}export{r as default,n as metadata};

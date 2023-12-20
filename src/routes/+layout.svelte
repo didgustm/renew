@@ -2,46 +2,80 @@
 <script>
     import { navigating } from '$app/stores'
     import { fade } from 'svelte/transition'
-    import { spring } from 'svelte/motion'
     import { onMount } from 'svelte'
-    import { gsap } from 'gsap';    
+    import { gsap } from 'gsap'
+    import { ScrollTrigger } from 'gsap/ScrollTrigger'
     import Lenis from '@studio-freight/lenis'
     import '@scss/common/common.scss'
     import icon from '@images/top.png'
     import Header from '@comp/Header.svelte'
     export let data;
 
-    let w = 0, scrollY = 0, cursor, posy2 = 0, scrolling = false;
-    const pos = spring({x:0, y:0});
+    gsap.registerPlugin(ScrollTrigger)
 
-    const onMouseMove = (e) => {
-        $pos = {x:e.x, y:e.y};
-        if(!scrolling){
-            gsap.to(cursor, {x: $pos.x - 8, y: $pos.y + posy2 - 8, duration:.3})
-        }
-    }
+    let w, h, scrollY = 0, pos = {x:0, y:0};
+    let app, thumb, dragging = false;
+    let isMobile = window.matchMedia('(pointer:coarse)').matches;
     
     function onclick(){
-        window.scrollTo({top:0, behavior:'smooth'});
+        lenis.scrollTo(0);
     }
     
     // Lenis
-    const lenis = new Lenis({
-		duration: 0.6
-	});
-	function raf(time){
-		lenis.raf(time);
-		requestAnimationFrame(raf)
-	}
-	requestAnimationFrame(raf);
+    const lenis = new Lenis();
+	lenis.on('scroll', () => {
+        ScrollTrigger.update
+    });
+    gsap.ticker.add((time) => {
+        lenis.raf(time * 1000)
+    });
+    gsap.ticker.lagSmoothing(0);
 
-    lenis.on('scroll', (e) => {
-        scrolling = lenis.isScrolling
-        posy2 = lenis.animatedScroll;
-        if(scrolling){
-            gsap.to(cursor, {x: $pos.x- 8, y: $pos.y + posy2 - 8, duration:0})
+    const onMouseMove = (e) => {
+        if(!isMobile){
+            pos.x = e.clientX;
+            pos.y = e.clientY;
+            gsap.to('.cursor', {x: pos.x, y: pos.y + lenis.scroll, duration:0})
         }
-    })
+    }
+
+    const onResize = () => {
+        isMobile = window.matchMedia('(pointer:coarse)').matches;
+        h = window.innerHeight;
+        let scrollH = h / (app.offsetHeight / h);
+        if(!isMobile) thumb.style.height = `${scrollH}px`;
+    }
+
+    const onPointerDown = () => {
+        if(!dragging){
+            dragging = true
+        }
+    }
+
+    const onPointerMove = (e) => {
+        let scrollH = h / (app.offsetHeight / h);
+        if(dragging && !isMobile){
+            lenis.scrollTo(app.offsetHeight * ((e.y - scrollH / 2) / h))
+        }
+    }
+
+    const onPointerUp = () => {
+        dragging = false
+    }
+
+    onMount(() => {
+        let scrollH = h / (app.offsetHeight / h);
+        if(!isMobile){
+            thumb.style.height = `${scrollH}px`
+            ScrollTrigger.create({
+                trigger: app,
+                onUpdate: self => {
+                    gsap.to('.thumb', {y: lenis.progress * (h - scrollH), duration: 0.1})
+                    gsap.to('.cursor', {x: pos.x, y: pos.y + lenis.scroll, duration:0})
+                }
+            })
+        }
+    });
 
 </script>
 
@@ -56,26 +90,28 @@
         document.querySelector('.header').classList.remove('active');
     }}
     on:mousemove={onMouseMove}
+    on:resize={onResize}
+    on:pointermove={e => onPointerMove(e)}
+    on:pointerup={onPointerUp}
     bind:innerWidth={w}
+    bind:innerHeight={h}
     bind:scrollY={scrollY}
 />
 
-{#if $navigating}
-<div class="loading" out:fade={{duration:200, delay:150}}>
-    <svg width="80px" height="80px" viewBox="0 0 80 80">
-        <path stroke-width="10" stroke-linecap="round" fill="none" d="M40,10 A30,30 0 1,0 70,40"></path>
-    </svg>
-</div>
-{/if}
 {#key data.currentRoute}
-<div
-    id="app"
-    in:fade={{duration:200, delay:150}}
->
+<div id="app" bind:this={app}>
     <Header { w } />
-    <main>
+    {#if $navigating}
+    <div class="loading" out:fade={{duration:200, delay:150}}>
+        <svg width="80px" height="80px" viewBox="0 0 80 80">
+            <path stroke-width="10" stroke-linecap="round" fill="none" d="M40,10 A30,30 0 1,0 70,40"></path>
+        </svg>
+    </div>
+    {:else}
+    <main in:fade={{duration:200, delay:150}}>
         <slot />
     </main>
+    {/if}
     <footer class="footer section">
         <article class="container">
             Copyright ©2023. my worklist
@@ -88,7 +124,16 @@
     {/if}
 </div>
 {/key}
-<div 
-    class="cursor" bind:this={cursor}
->
+{#if !isMobile}
+<div class="cursor"></div>
+<div class="scrollbar">
+    <div class="track">
+        <div 
+            class="thumb" 
+            bind:this={thumb}
+            on:pointerdown={onPointerDown}
+        >
+        </div>
+    </div>
 </div>
+{/if}
