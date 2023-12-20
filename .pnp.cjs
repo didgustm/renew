@@ -35,7 +35,6 @@ const RAW_RUNTIME_STATE =
           ["sass", "npm:1.69.5"],\
           ["svelte", "npm:4.2.7"],\
           ["svelte-preprocess", "virtual:c56b46d83dc705f61d645efafd50b5dd10b694a413a2075f2bfa433bbaa41df431f824c0f747468efbf1694d7d2f15adbae617c2c5c3f6b6e0b1978b92526b7c#npm:5.1.1"],\
-          ["svrollbar", "npm:0.12.0"],\
           ["vite", "virtual:c56b46d83dc705f61d645efafd50b5dd10b694a413a2075f2bfa433bbaa41df431f824c0f747468efbf1694d7d2f15adbae617c2c5c3f6b6e0b1978b92526b7c#npm:4.5.0"]\
         ],\
         "linkType": "SOFT"\
@@ -2193,15 +2192,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["svrollbar", [\
-      ["npm:0.12.0", {\
-        "packageLocation": "../../AppData/Local/Yarn/Berry/cache/svrollbar-npm-0.12.0-f00f7c1f38-10c0.zip/node_modules/svrollbar/",\
-        "packageDependencies": [\
-          ["svrollbar", "npm:0.12.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["tar", [\
       ["npm:6.2.0", {\
         "packageLocation": "../../AppData/Local/Yarn/Berry/cache/tar-npm-6.2.0-3eb25205a7-10c0.zip/node_modules/tar/",\
@@ -2360,7 +2350,6 @@ const RAW_RUNTIME_STATE =
           ["sass", "npm:1.69.5"],\
           ["svelte", "npm:4.2.7"],\
           ["svelte-preprocess", "virtual:c56b46d83dc705f61d645efafd50b5dd10b694a413a2075f2bfa433bbaa41df431f824c0f747468efbf1694d7d2f15adbae617c2c5c3f6b6e0b1978b92526b7c#npm:5.1.1"],\
-          ["svrollbar", "npm:0.12.0"],\
           ["vite", "virtual:c56b46d83dc705f61d645efafd50b5dd10b694a413a2075f2bfa433bbaa41df431f824c0f747468efbf1694d7d2f15adbae617c2c5c3f6b6e0b1978b92526b7c#npm:4.5.0"]\
         ],\
         "linkType": "SOFT"\

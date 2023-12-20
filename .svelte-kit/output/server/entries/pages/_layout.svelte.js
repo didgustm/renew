@@ -17,8 +17,7 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { data } = $$props;
   gsap.registerPlugin(ScrollTrigger);
   let w;
-  let app, thumb;
-  let isMobile = window.matchMedia("(pointer:coarse)").matches;
+  let app, cursor, isMobile = window.matchMedia("(pointer:coarse)").matches;
   const lenis = new Lenis();
   lenis.on("scroll", () => {
     ScrollTrigger.update;
@@ -30,7 +29,7 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   if ($$props.data === void 0 && $$bindings.data && data !== void 0)
     $$bindings.data(data);
   $$unsubscribe_navigating();
-  return `  ${$$result.head += `<!-- HEAD_svelte-mnx22g_START -->${$$result.title = `<title>MyWorklist</title>`, ""}<!-- HEAD_svelte-mnx22g_END -->`, ""}  <div id="app"${add_attribute("this", app, 0)}>${validate_component(Header, "Header").$$render($$result, { w }, {}, {})} ${$navigating ? `<div class="loading" data-svelte-h="svelte-1w98hqo"><svg width="80px" height="80px" viewBox="0 0 80 80"><path stroke-width="10" stroke-linecap="round" fill="none" d="M40,10 A30,30 0 1,0 70,40"></path></svg></div>` : `<main>${slots.default ? slots.default({}) : ``}</main>`} <footer class="footer section" data-svelte-h="svelte-1a5e97w"><article class="container">Copyright ©2023. my worklist</article></footer> ${``}</div> ${!isMobile ? `<div class="cursor"></div> <div class="scrollbar"><div class="track"><div class="thumb"${add_attribute("this", thumb, 0)} data-svelte-h="svelte-1htu4hi"></div></div></div>` : ``}`;
+  return `  ${$$result.head += `<!-- HEAD_svelte-mnx22g_START -->${$$result.title = `<title>MyWorklist</title>`, ""}<!-- HEAD_svelte-mnx22g_END -->`, ""}  <div id="app"${add_attribute("this", app, 0)}>${validate_component(Header, "Header").$$render($$result, { w }, {}, {})} ${$navigating ? `<div class="loading" data-svelte-h="svelte-1w98hqo"><svg width="80px" height="80px" viewBox="0 0 80 80"><path stroke-width="10" stroke-linecap="round" fill="none" d="M40,10 A30,30 0 1,0 70,40"></path></svg></div>` : `<main>${slots.default ? slots.default({}) : ``}</main>`} <footer class="footer section" data-svelte-h="svelte-1a5e97w"><article class="container">Copyright ©2023. my worklist</article></footer></div> ${``} ${!isMobile ? `<div class="cursor"${add_attribute("this", cursor, 0)}></div>` : ``}`;
 });
 export {
   Layout as default

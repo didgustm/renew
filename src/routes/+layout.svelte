@@ -14,8 +14,7 @@
     gsap.registerPlugin(ScrollTrigger)
 
     let w, h, scrollY = 0, pos = {x:0, y:0};
-    let app, thumb, dragging = false;
-    let isMobile = window.matchMedia('(pointer:coarse)').matches;
+    let app, cursor, isMobile = window.matchMedia('(pointer:coarse)').matches;
     
     function onclick(){
         lenis.scrollTo(0);
@@ -35,46 +34,22 @@
         if(!isMobile){
             pos.x = e.clientX;
             pos.y = e.clientY;
-            gsap.to('.cursor', {x: pos.x, y: pos.y + lenis.scroll, duration:0})
+            gsap.to(cursor, {x: pos.x, y: pos.y + lenis.scroll, duration:0})
         }
     }
 
     const onResize = () => {
         isMobile = window.matchMedia('(pointer:coarse)').matches;
         h = window.innerHeight;
-        let scrollH = h / (app.offsetHeight / h);
-        if(!isMobile) thumb.style.height = `${scrollH}px`;
-    }
-
-    const onPointerDown = () => {
-        if(!dragging){
-            dragging = true
-        }
-    }
-
-    const onPointerMove = (e) => {
-        let scrollH = h / (app.offsetHeight / h);
-        if(dragging && !isMobile){
-            lenis.scrollTo(app.offsetHeight * ((e.y - scrollH / 2) / h))
-        }
-    }
-
-    const onPointerUp = () => {
-        dragging = false
     }
 
     onMount(() => {
-        let scrollH = h / (app.offsetHeight / h);
-        if(!isMobile){
-            thumb.style.height = `${scrollH}px`
-            ScrollTrigger.create({
-                trigger: app,
-                onUpdate: self => {
-                    gsap.to('.thumb', {y: lenis.progress * (h - scrollH), duration: 0.1})
-                    gsap.to('.cursor', {x: pos.x, y: pos.y + lenis.scroll, duration:0})
-                }
-            })
-        }
+        ScrollTrigger.create({
+            trigger: app,
+            onUpdate: self => {
+                if(!isMobile) gsap.to(cursor, {x: pos.x, y: pos.y + lenis.scroll, duration:0})
+            }
+        })
     });
 
 </script>
@@ -91,8 +66,6 @@
     }}
     on:mousemove={onMouseMove}
     on:resize={onResize}
-    on:pointermove={e => onPointerMove(e)}
-    on:pointerup={onPointerUp}
     bind:innerWidth={w}
     bind:innerHeight={h}
     bind:scrollY={scrollY}
@@ -117,23 +90,13 @@
             Copyright ©2023. my worklist
         </article>
     </footer>
-    {#if scrollY > 100}
-    <button type="button" class="btn_top" on:click={onclick}>
-        <img src="{ icon }" alt="상단 바로가기">
-    </button>
-    {/if}
 </div>
 {/key}
+{#if scrollY > 100}
+<button type="button" class="btn_top" on:click={onclick}>
+    <img src="{ icon }" alt="상단 바로가기">
+</button>
+{/if}
 {#if !isMobile}
-<div class="cursor"></div>
-<div class="scrollbar">
-    <div class="track">
-        <div 
-            class="thumb" 
-            bind:this={thumb}
-            on:pointerdown={onPointerDown}
-        >
-        </div>
-    </div>
-</div>
+<div class="cursor" bind:this={cursor}></div>
 {/if}

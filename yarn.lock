@@ -1854,13 +1854,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svrollbar@npm:^0.12.0":
-  version: 0.12.0
-  resolution: "svrollbar@npm:0.12.0"
-  checksum: 323f5ca31d96dc11f34b47bf964215163a637b8323dd08283527db57f68f12e400d6ca77dd1831ef17c53e15f23629e40edb4691fcfe9e5d4c94c9c77699c00c
-  languageName: node
-  linkType: hard
-
 "tar@npm:^6.1.11, tar@npm:^6.1.2":
   version: 6.2.0
   resolution: "tar@npm:6.2.0"
@@ -1960,7 +1953,6 @@ __metadata:
     sass: "npm:^1.69.5"
     svelte: "npm:^4.2.7"
     svelte-preprocess: "npm:^5.1.1"
-    svrollbar: "npm:^0.12.0"
     vite: "npm:^4.4.2"
   languageName: unknown
   linkType: soft
