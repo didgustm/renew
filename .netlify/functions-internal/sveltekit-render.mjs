@@ -1,4 +1,6 @@
-export const manifest = (() => {
+import { init } from '../serverless.js';
+
+export const handler = init((() => {
 function __memo(fn) {
 	let value;
 	return () => value ??= (value = fn());
@@ -12,10 +14,10 @@ return {
 	_: {
 		client: {"start":"_app/immutable/entry/start.47f9553f.js","app":"_app/immutable/entry/app.2f3b8870.js","imports":["_app/immutable/entry/start.47f9553f.js","_app/immutable/chunks/scheduler.2bfa17be.js","_app/immutable/chunks/singletons.cb43087e.js","_app/immutable/entry/app.2f3b8870.js","_app/immutable/chunks/preload-helper.a4192956.js","_app/immutable/chunks/scheduler.2bfa17be.js","_app/immutable/chunks/index.5b7eef27.js"],"stylesheets":[],"fonts":[]},
 		nodes: [
-			__memo(() => import('./nodes/0.js')),
-			__memo(() => import('./nodes/1.js')),
-			__memo(() => import('./nodes/2.js')),
-			__memo(() => import('./nodes/3.js'))
+			__memo(() => import('../server/nodes/0.js')),
+			__memo(() => import('../server/nodes/1.js')),
+			__memo(() => import('../server/nodes/2.js')),
+			__memo(() => import('../server/nodes/3.js'))
 		],
 		routes: [
 			{
@@ -30,7 +32,7 @@ return {
 				pattern: /^\/api\/?$/,
 				params: [],
 				page: null,
-				endpoint: __memo(() => import('./entries/endpoints/api/_server.js'))
+				endpoint: __memo(() => import('../server/entries/endpoints/api/_server.js'))
 			},
 			{
 				id: "/list/[slug]",
@@ -46,4 +48,4 @@ return {
 		}
 	}
 }
-})();
+})());
