@@ -1,9 +1,8 @@
 // js > utils
 import { gsap } from 'gsap';
 
-export const setGridLayout = (w) => {
+export const setGridLayout = (items, w) => {
     const gridContainer = document.querySelector('.grid'),
-            items = gridContainer.querySelectorAll('.item'),
             leng = items.length,
             gridW = gridContainer.clientWidth,
             step = w < 450? 1: w < 768? 2: w <=1400? 3: 4,

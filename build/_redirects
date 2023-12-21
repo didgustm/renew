@@ -2,7 +2,7 @@
 
 / /.netlify/functions/sveltekit-index 200
 /__data.json /.netlify/functions/sveltekit-index 200
-/api /.netlify/functions/sveltekit-api 200
-/api/__data.json /.netlify/functions/sveltekit-api 200
+/api/lists /.netlify/functions/sveltekit-api-lists 200
+/api/lists/__data.json /.netlify/functions/sveltekit-api-lists 200
 /list/:1 /.netlify/functions/sveltekit-list-_1 200
 /list/:1/__data.json /.netlify/functions/sveltekit-list-_1 200

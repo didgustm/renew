@@ -530,14 +530,14 @@
     "isEntry": true,
     "src": "src/routes/+page.svelte"
   },
-  "src/routes/api/+server.js": {
-    "file": "entries/endpoints/api/_server.js",
+  "src/routes/api/lists/+server.js": {
+    "file": "entries/endpoints/api/lists/_server.js",
     "imports": [
       "_utils.js",
       "_index.js"
     ],
     "isEntry": true,
-    "src": "src/routes/api/+server.js"
+    "src": "src/routes/api/lists/+server.js"
   },
   "src/routes/list/24fly.md": {
     "file": "chunks/24fly.js",
