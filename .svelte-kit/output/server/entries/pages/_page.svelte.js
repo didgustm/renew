@@ -143,10 +143,10 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       showItems = items.filter((ele) => ele.dataset.sort == menus[current]);
       hideItems = items.filter((ele) => ele.dataset.sort != menus[current]);
       setItemLayout(showItems, hideItems, 0.4, w);
-      setGridLayout(showItems, w);
+      setGridLayout(showItems);
     } else {
       setItemLayout(items, "", 0.4, w);
-      setGridLayout(items, w);
+      setGridLayout(items);
     }
   };
   if ($$props.data === void 0 && $$bindings.data && data !== void 0)

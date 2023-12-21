@@ -1,7 +1,6 @@
 import { gsap } from "gsap";
-const setGridLayout = (items, w) => {
-  console.log(items);
-  const gridContainer = document.querySelector(".grid"), leng = items.length, gridW = gridContainer.clientWidth, h = items[0].offsetHeight, step = w < 450 ? 1 : w < 768 ? 2 : w <= 1400 ? 3 : 4, gap = w < 450 ? 0 : w < 600 ? 20 : 30;
+const setGridLayout = (w) => {
+  const gridContainer = document.querySelector(".grid"), items = gridContainer.querySelectorAll(".item"), leng = items.length, gridW = gridContainer.clientWidth, step = w < 450 ? 1 : w < 768 ? 2 : w <= 1400 ? 3 : 4, gap = w < 450 ? 0 : w < 600 ? 20 : 30, h = items[0].offsetHeight;
   items.forEach((x) => {
     x.style.width = `${(gridW - gap * (step - 1)) / step}px`;
   });
