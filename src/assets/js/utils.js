@@ -5,7 +5,7 @@ export const setGridLayout = (items, w) => {
     const gridContainer = document.querySelector('.grid'),
             leng = items.length,
             gridW = gridContainer.clientWidth,
-            h = gridContainer.firstChild.offsetHeight,
+            h = items[0].offsetHeight,
             step = w < 450? 1: w < 768? 2: w <=1400? 3: 4,
             gap = w < 450? 0: w < 600? 20: 30;
     items.forEach(x => {

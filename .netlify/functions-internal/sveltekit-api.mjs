@@ -1,4 +1,6 @@
-export const manifest = (() => {
+import { init } from '../serverless.js';
+
+export const handler = init((() => {
 function __memo(fn) {
 	let value;
 	return () => value ??= (value = fn());
@@ -12,32 +14,16 @@ return {
 	_: {
 		client: {"start":"_app/immutable/entry/start.b5c9846a.js","app":"_app/immutable/entry/app.331399a8.js","imports":["_app/immutable/entry/start.b5c9846a.js","_app/immutable/chunks/scheduler.2bfa17be.js","_app/immutable/chunks/singletons.bfc2a95b.js","_app/immutable/entry/app.331399a8.js","_app/immutable/chunks/preload-helper.a4192956.js","_app/immutable/chunks/scheduler.2bfa17be.js","_app/immutable/chunks/index.5b7eef27.js"],"stylesheets":[],"fonts":[]},
 		nodes: [
-			__memo(() => import('./nodes/0.js')),
-			__memo(() => import('./nodes/1.js')),
-			__memo(() => import('./nodes/2.js')),
-			__memo(() => import('./nodes/3.js'))
+			__memo(() => import('../server/nodes/0.js')),
+			__memo(() => import('../server/nodes/1.js'))
 		],
 		routes: [
-			{
-				id: "/",
-				pattern: /^\/$/,
-				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 2 },
-				endpoint: null
-			},
 			{
 				id: "/api",
 				pattern: /^\/api\/?$/,
 				params: [],
 				page: null,
-				endpoint: __memo(() => import('./entries/endpoints/api/_server.js'))
-			},
-			{
-				id: "/list/[slug]",
-				pattern: /^\/list\/([^/]+?)\/?$/,
-				params: [{"name":"slug","optional":false,"rest":false,"chained":false}],
-				page: { layouts: [0,], errors: [1,], leaf: 3 },
-				endpoint: null
+				endpoint: __memo(() => import('../server/entries/endpoints/api/_server.js'))
 			}
 		],
 		matchers: async () => {
@@ -46,4 +32,4 @@ return {
 		}
 	}
 }
-})();
+})());
