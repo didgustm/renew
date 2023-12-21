@@ -1,4 +1,3 @@
-import adapter from '@sveltejs/adapter-auto'
 import netlify from '@sveltejs/adapter-netlify'
 import { mdsvex } from 'mdsvex';
 
