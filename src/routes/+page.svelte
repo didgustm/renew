@@ -2,8 +2,8 @@
 <script>
     import { onMount } from 'svelte'
     import '@scss/index/style.scss'
-    import Top from '@comp/index/Top.svelte';
-    import Section from '@comp/index/Section.svelte';
+    import Top from '@comp/index/Top.svelte'
+    import Section from './Section.svelte'
     import { setGridLayout, setItemLayout } from '@js/utils';
         
     export let data;
