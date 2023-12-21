@@ -1,10 +1,10 @@
 <!-- routes > page -->
 <script>
     import { onMount } from 'svelte'
-    import '@scss/index/style.scss'
-    import Top from '@comp/index/Top.svelte';
-    import Section from '@comp/index/Section.svelte';
-    import { setGridLayout, setItemLayout } from '@js/utils';
+    import '/src/assets/scss/index/style.scss'
+    import Top from '/src/components/index/Top.svelte';
+    import Section from '/src/components/index/Section.svelte';
+    import { setGridLayout, setItemLayout } from '/src/assets/js/utils';
         
     export let data;
 
