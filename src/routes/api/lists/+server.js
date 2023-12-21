@@ -1,5 +1,5 @@
 // routes > api > server
-import { fetchMarkdownPosts } from "/src/assets/js/utils"
+import { fetchMarkdownPosts } from "@js/utils"
 import { json } from '@sveltejs/kit'
 
 export const GET = async () => {

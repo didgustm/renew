@@ -6,9 +6,9 @@
     import { gsap } from 'gsap'
     import { ScrollTrigger } from 'gsap/ScrollTrigger'
     import Lenis from '@studio-freight/lenis'
-    import '/src/assets/scss/common/common.scss'
-    import icon from '/src/assets/images/top.png'
-    import Header from '/src/components/Header.svelte'
+    import '@scss/common/common.scss'
+    import icon from '@images/top.png'
+    import Header from '@comp/Header.svelte'
     export let data;
 
     gsap.registerPlugin(ScrollTrigger)
