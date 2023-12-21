@@ -1,0 +1,1 @@
+import{s as a}from"./scheduler.2bfa17be.js";import{S as e,i as o}from"./index.5b7eef27.js";const r={id:4,title:"강한투자클럽",caption:"기본에 강한, 수익에 강한",url:"https://leaderscpa.com/merchant/kanghan/",category:"Stock",device:"PC, Mobile"};class c extends e{constructor(t){super(),o(this,t,null,null,a,{})}}export{c as default,r as metadata};
