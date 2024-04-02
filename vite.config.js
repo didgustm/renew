@@ -14,6 +14,7 @@ export default defineConfig({
             { find: '@js', replacement: '/src/assets/js' },
             { find: '@images', replacement: '/src/assets/images' },
             { find: '@comp', replacement: '/src/components' },
+            { find: '@lib', replacement: '/src/lib' }
         ]
     },
     server: {

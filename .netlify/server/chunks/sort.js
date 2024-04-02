@@ -4,7 +4,8 @@ const metadata = {
   "title": "Grid Sort",
   "caption": "Custom Code",
   "url": "http://yhh2.dothome.co.kr/sort/",
-  "category": "Etc",
+  "type": "Script",
+  "role": "My part - 100%",
   "device": "PC, Mobile"
 };
 const Sort = create_ssr_component(($$result, $$props, $$bindings, slots) => {

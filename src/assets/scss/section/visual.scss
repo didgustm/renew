@@ -1,0 +1,85 @@
+@use '@scss/set/variable' as var;
+
+.visual{
+    //background:radial-gradient(#f3f3f3, #f0f0f0, #fff);
+    background:var.$light;
+    @include var.setFont(8rem, 700);
+    .bg{
+        position:absolute;
+        width:50rem;
+        height:50rem;
+        border-radius:100%;
+        opacity:0.3;
+        filter:blur(76px);
+        z-index:-1;
+        &.bg01{
+            top:-30rem;
+            left:-10rem;
+            background:#965C97
+        }
+        &.bg02{
+            top:-35rem;
+            left:20%;
+            background:#645B8E
+        }
+        &.bg03{
+            top:-25rem;
+            left:40%;
+            background:#3E5476
+        }
+        &.bg04{
+            top:-40rem;
+            right:20rem;
+            background:#C75B8E
+        }
+        &.bg05{
+            top:-20rem;
+            right:-20rem;
+            background:#C75B8E
+        }
+    }
+    .sketch{
+        @include var.absDefault(0, 50%);
+        width:1920px;
+        height:100vh;
+        transform:translateX(-50%);
+        z-index:1;
+        .staticText{
+            transform:scale(0.9);
+            transform-origin:50%
+        }
+        .clipText{
+            animation-delay:1.2s;
+            animation-timing-function:linear
+        }
+        text{
+            opacity:0;
+            animation:fade 0.8s ease 0.4s forwards
+        }
+    }
+    canvas{
+        @include var.absDefault(0, 50%);
+        transform:translateX(-50%);
+        z-index:-1
+    }
+    .visualBall{
+        transform-origin:50% !important;
+        transform-box:fill-box
+    }
+    .scroll{
+        position:absolute;
+        left:0;
+        right:0;
+        bottom:1rem;
+        text-align:center;
+        font-size:1.4rem;
+        animation:bounce 0.6s ease alternate infinite
+    }
+    .barba{
+        @include var.absDefault(calc((100% - 11rem) * 0.5), calc(50% - 11rem));
+        @include var.circle(22rem);
+        background:var.$dblue;
+        opacity:0;
+        z-index:2
+    }
+}

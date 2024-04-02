@@ -43,7 +43,6 @@ import chungin from '@images/thumnail/chungin.jpg'
 import isafly from '@images/thumnail/24fly.jpg'
 
 export const thumnails = [
-    template,
     isabang3,
     fasttrack,
     evlabs,
@@ -51,12 +50,13 @@ export const thumnails = [
     isabang2,
     slimcare,
     goldclass,
+    template,
     blacklabel,
     alevel,
     corevac,
     airclean,
-    isabang,
     jejuchanga,
+    isabang,
     fastdealer,
     fasthunter,
     classeum,

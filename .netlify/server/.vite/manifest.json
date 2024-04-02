@@ -10,8 +10,7 @@
   ".yarn/unplugged/@sveltejs-kit-virtual-0bbe395435/node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
     "file": "entries/fallbacks/error.svelte.js",
     "imports": [
-      "_ssr.js",
-      "_stores.js"
+      "_ssr.js"
     ],
     "isEntry": true,
     "src": ".yarn/unplugged/@sveltejs-kit-virtual-0bbe395435/node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
@@ -38,62 +37,9 @@
   "_ssr.js": {
     "file": "chunks/ssr.js"
   },
-  "_stores.js": {
-    "file": "chunks/stores.js",
-    "imports": [
-      "_ssr.js"
-    ]
-  },
-  "_utils.js": {
-    "dynamicImports": [
-      "src/routes/list/24fly.md",
-      "src/routes/list/afly.md",
-      "src/routes/list/airclean.md",
-      "src/routes/list/alevel.md",
-      "src/routes/list/bjp.md",
-      "src/routes/list/blacklabel.md",
-      "src/routes/list/calendar.md",
-      "src/routes/list/chart.md",
-      "src/routes/list/chungin.md",
-      "src/routes/list/classeum.md",
-      "src/routes/list/corevac.md",
-      "src/routes/list/cpa.md",
-      "src/routes/list/evlabs.md",
-      "src/routes/list/fastdealer.md",
-      "src/routes/list/fasthunter.md",
-      "src/routes/list/fasttrack.md",
-      "src/routes/list/finco.md",
-      "src/routes/list/flowercake.md",
-      "src/routes/list/fullpage.md",
-      "src/routes/list/goldclass.md",
-      "src/routes/list/hankyung.md",
-      "src/routes/list/hersit.md",
-      "src/routes/list/implant.md",
-      "src/routes/list/isabang.md",
-      "src/routes/list/isabang2.md",
-      "src/routes/list/isabang3.md",
-      "src/routes/list/isearch.md",
-      "src/routes/list/jamong.md",
-      "src/routes/list/jejuchanga.md",
-      "src/routes/list/kanghan.md",
-      "src/routes/list/lawadviser.md",
-      "src/routes/list/license.md",
-      "src/routes/list/linefly.md",
-      "src/routes/list/lotto.md",
-      "src/routes/list/makefly.md",
-      "src/routes/list/mentor.md",
-      "src/routes/list/petfly.md",
-      "src/routes/list/playup.md",
-      "src/routes/list/publing.md",
-      "src/routes/list/pyeongtaek.md",
-      "src/routes/list/slimcare.md",
-      "src/routes/list/sort.md",
-      "src/routes/list/stake.md",
-      "src/routes/list/swiper.md",
-      "src/routes/list/template01.md",
-      "src/routes/list/todo.md"
-    ],
-    "file": "chunks/utils.js"
+  "common.css": {
+    "file": "_app/immutable/assets/common.7b90fd04.css",
+    "src": "common.css"
   },
   "src/assets/fonts/Montserrat-vf.woff": {
     "file": "_app/immutable/assets/Montserrat-vf.9aeb30a5.woff",
@@ -124,7 +70,7 @@
     "src": "src/assets/images/thumnail/bjp.jpg"
   },
   "src/assets/images/thumnail/blacklabel.jpg": {
-    "file": "_app/immutable/assets/blacklabel.a38181f0.jpg",
+    "file": "_app/immutable/assets/blacklabel.6e8517fb.jpg",
     "src": "src/assets/images/thumnail/blacklabel.jpg"
   },
   "src/assets/images/thumnail/calendar.jpg": {
@@ -204,7 +150,7 @@
     "src": "src/assets/images/thumnail/jamong.jpg"
   },
   "src/assets/images/thumnail/jejuchanga.jpg": {
-    "file": "_app/immutable/assets/jejuchanga.0062a899.jpg",
+    "file": "_app/immutable/assets/jejuchanga.769e5cec.jpg",
     "src": "src/assets/images/thumnail/jejuchanga.jpg"
   },
   "src/assets/images/thumnail/js.jpg": {
@@ -259,194 +205,6 @@
     "file": "_app/immutable/assets/template.28b26d3d.jpg",
     "src": "src/assets/images/thumnail/template.jpg"
   },
-  "src/assets/images/view/24fly_view.webp": {
-    "file": "_app/immutable/assets/24fly_view.b2db7f17.webp",
-    "src": "src/assets/images/view/24fly_view.webp"
-  },
-  "src/assets/images/view/afly_view.webp": {
-    "file": "_app/immutable/assets/afly_view.b62f53a5.webp",
-    "src": "src/assets/images/view/afly_view.webp"
-  },
-  "src/assets/images/view/airclean_view.webp": {
-    "file": "_app/immutable/assets/airclean_view.7f56f4ff.webp",
-    "src": "src/assets/images/view/airclean_view.webp"
-  },
-  "src/assets/images/view/alevel_view.webp": {
-    "file": "_app/immutable/assets/alevel_view.6db03a9f.webp",
-    "src": "src/assets/images/view/alevel_view.webp"
-  },
-  "src/assets/images/view/bjp_view.webp": {
-    "file": "_app/immutable/assets/bjp_view.111c0642.webp",
-    "src": "src/assets/images/view/bjp_view.webp"
-  },
-  "src/assets/images/view/blacklabel_view.webp": {
-    "file": "_app/immutable/assets/blacklabel_view.023041b9.webp",
-    "src": "src/assets/images/view/blacklabel_view.webp"
-  },
-  "src/assets/images/view/calendar_view.webp": {
-    "file": "_app/immutable/assets/calendar_view.30b1ef8a.webp",
-    "src": "src/assets/images/view/calendar_view.webp"
-  },
-  "src/assets/images/view/chart_view.webp": {
-    "file": "_app/immutable/assets/chart_view.6af3f10f.webp",
-    "src": "src/assets/images/view/chart_view.webp"
-  },
-  "src/assets/images/view/chungin_view.webp": {
-    "file": "_app/immutable/assets/chungin_view.fbae9e11.webp",
-    "src": "src/assets/images/view/chungin_view.webp"
-  },
-  "src/assets/images/view/classeum_view.webp": {
-    "file": "_app/immutable/assets/classeum_view.c136c421.webp",
-    "src": "src/assets/images/view/classeum_view.webp"
-  },
-  "src/assets/images/view/corevac_view.webp": {
-    "file": "_app/immutable/assets/corevac_view.2316d6cb.webp",
-    "src": "src/assets/images/view/corevac_view.webp"
-  },
-  "src/assets/images/view/cpa_view.webp": {
-    "file": "_app/immutable/assets/cpa_view.47484071.webp",
-    "src": "src/assets/images/view/cpa_view.webp"
-  },
-  "src/assets/images/view/evlabs_view.webp": {
-    "file": "_app/immutable/assets/evlabs_view.5a287b8a.webp",
-    "src": "src/assets/images/view/evlabs_view.webp"
-  },
-  "src/assets/images/view/fastdealer_view.webp": {
-    "file": "_app/immutable/assets/fastdealer_view.97796d91.webp",
-    "src": "src/assets/images/view/fastdealer_view.webp"
-  },
-  "src/assets/images/view/fasthunter_view.webp": {
-    "file": "_app/immutable/assets/fasthunter_view.bea42fc0.webp",
-    "src": "src/assets/images/view/fasthunter_view.webp"
-  },
-  "src/assets/images/view/fasttrack_view.webp": {
-    "file": "_app/immutable/assets/fasttrack_view.4f3f9a88.webp",
-    "src": "src/assets/images/view/fasttrack_view.webp"
-  },
-  "src/assets/images/view/finco_view.webp": {
-    "file": "_app/immutable/assets/finco_view.3fa75a11.webp",
-    "src": "src/assets/images/view/finco_view.webp"
-  },
-  "src/assets/images/view/flowercake_view.webp": {
-    "file": "_app/immutable/assets/flowercake_view.21487a2b.webp",
-    "src": "src/assets/images/view/flowercake_view.webp"
-  },
-  "src/assets/images/view/fullpage_view.webp": {
-    "file": "_app/immutable/assets/fullpage_view.f4851309.webp",
-    "src": "src/assets/images/view/fullpage_view.webp"
-  },
-  "src/assets/images/view/goldclass_view.webp": {
-    "file": "_app/immutable/assets/goldclass_view.ddfe6e82.webp",
-    "src": "src/assets/images/view/goldclass_view.webp"
-  },
-  "src/assets/images/view/hankyung_view.webp": {
-    "file": "_app/immutable/assets/hankyung_view.4706acce.webp",
-    "src": "src/assets/images/view/hankyung_view.webp"
-  },
-  "src/assets/images/view/hersit_view.webp": {
-    "file": "_app/immutable/assets/hersit_view.9fbba929.webp",
-    "src": "src/assets/images/view/hersit_view.webp"
-  },
-  "src/assets/images/view/implant_view.webp": {
-    "file": "_app/immutable/assets/implant_view.a2c990e6.webp",
-    "src": "src/assets/images/view/implant_view.webp"
-  },
-  "src/assets/images/view/isabang2_view.webp": {
-    "file": "_app/immutable/assets/isabang2_view.f642df79.webp",
-    "src": "src/assets/images/view/isabang2_view.webp"
-  },
-  "src/assets/images/view/isabang3_view.webp": {
-    "file": "_app/immutable/assets/isabang3_view.3837d08a.webp",
-    "src": "src/assets/images/view/isabang3_view.webp"
-  },
-  "src/assets/images/view/isabang_view.webp": {
-    "file": "_app/immutable/assets/isabang_view.9310b79f.webp",
-    "src": "src/assets/images/view/isabang_view.webp"
-  },
-  "src/assets/images/view/isearch_view.webp": {
-    "file": "_app/immutable/assets/isearch_view.ff7ab3d6.webp",
-    "src": "src/assets/images/view/isearch_view.webp"
-  },
-  "src/assets/images/view/jamong_view.webp": {
-    "file": "_app/immutable/assets/jamong_view.37863c50.webp",
-    "src": "src/assets/images/view/jamong_view.webp"
-  },
-  "src/assets/images/view/jejuchanga_view.webp": {
-    "file": "_app/immutable/assets/jejuchanga_view.52d411ae.webp",
-    "src": "src/assets/images/view/jejuchanga_view.webp"
-  },
-  "src/assets/images/view/kanghan_view.webp": {
-    "file": "_app/immutable/assets/kanghan_view.b28c109e.webp",
-    "src": "src/assets/images/view/kanghan_view.webp"
-  },
-  "src/assets/images/view/lawadviser_view.webp": {
-    "file": "_app/immutable/assets/lawadviser_view.c88416e5.webp",
-    "src": "src/assets/images/view/lawadviser_view.webp"
-  },
-  "src/assets/images/view/license_view.webp": {
-    "file": "_app/immutable/assets/license_view.d36cdfba.webp",
-    "src": "src/assets/images/view/license_view.webp"
-  },
-  "src/assets/images/view/linefly_view.webp": {
-    "file": "_app/immutable/assets/linefly_view.9dcf9fe0.webp",
-    "src": "src/assets/images/view/linefly_view.webp"
-  },
-  "src/assets/images/view/lotto_view.webp": {
-    "file": "_app/immutable/assets/lotto_view.994e5b35.webp",
-    "src": "src/assets/images/view/lotto_view.webp"
-  },
-  "src/assets/images/view/makefly_view.webp": {
-    "file": "_app/immutable/assets/makefly_view.5834ce34.webp",
-    "src": "src/assets/images/view/makefly_view.webp"
-  },
-  "src/assets/images/view/mentor_view.webp": {
-    "file": "_app/immutable/assets/mentor_view.0556e231.webp",
-    "src": "src/assets/images/view/mentor_view.webp"
-  },
-  "src/assets/images/view/petfly_view.webp": {
-    "file": "_app/immutable/assets/petfly_view.79a97290.webp",
-    "src": "src/assets/images/view/petfly_view.webp"
-  },
-  "src/assets/images/view/playup_view.webp": {
-    "file": "_app/immutable/assets/playup_view.f52603d6.webp",
-    "src": "src/assets/images/view/playup_view.webp"
-  },
-  "src/assets/images/view/publing_view.webp": {
-    "file": "_app/immutable/assets/publing_view.454f5fad.webp",
-    "src": "src/assets/images/view/publing_view.webp"
-  },
-  "src/assets/images/view/pyeongtaek_view.webp": {
-    "file": "_app/immutable/assets/pyeongtaek_view.9280895f.webp",
-    "src": "src/assets/images/view/pyeongtaek_view.webp"
-  },
-  "src/assets/images/view/slimcare_view.webp": {
-    "file": "_app/immutable/assets/slimcare_view.877c3128.webp",
-    "src": "src/assets/images/view/slimcare_view.webp"
-  },
-  "src/assets/images/view/sort_view.webp": {
-    "file": "_app/immutable/assets/sort_view.94d899eb.webp",
-    "src": "src/assets/images/view/sort_view.webp"
-  },
-  "src/assets/images/view/stake_view.webp": {
-    "file": "_app/immutable/assets/stake_view.0927ddfa.webp",
-    "src": "src/assets/images/view/stake_view.webp"
-  },
-  "src/assets/images/view/swiper_view.webp": {
-    "file": "_app/immutable/assets/swiper_view.81b064e2.webp",
-    "src": "src/assets/images/view/swiper_view.webp"
-  },
-  "src/assets/images/view/template01_view.webp": {
-    "file": "_app/immutable/assets/template01_view.7ba47da5.webp",
-    "src": "src/assets/images/view/template01_view.webp"
-  },
-  "src/assets/images/view/todo_view.webp": {
-    "file": "_app/immutable/assets/todo_view.a076baff.webp",
-    "src": "src/assets/images/view/todo_view.webp"
-  },
-  "src/routes/+layout.css": {
-    "file": "_app/immutable/assets/_layout.ab9c5127.css",
-    "src": "src/routes/+layout.css"
-  },
   "src/routes/+layout.js": {
     "file": "entries/pages/_layout.js",
     "isEntry": true,
@@ -458,18 +216,17 @@
       "_app/immutable/assets/Pretendard-vf.db0916f0.woff2"
     ],
     "css": [
-      "_app/immutable/assets/_layout.ab9c5127.css"
+      "_app/immutable/assets/common.7b90fd04.css"
     ],
     "file": "entries/pages/_layout.svelte.js",
     "imports": [
-      "_ssr.js",
-      "_stores.js"
+      "_ssr.js"
     ],
     "isEntry": true,
     "src": "src/routes/+layout.svelte"
   },
   "src/routes/+page.css": {
-    "file": "_app/immutable/assets/_page.7f0aa3b0.css",
+    "file": "_app/immutable/assets/_page.ec39bd05.css",
     "src": "src/routes/+page.css"
   },
   "src/routes/+page.js": {
@@ -485,7 +242,7 @@
       "_app/immutable/assets/petfly.00e1bd15.jpg",
       "_app/immutable/assets/evlabs.fe4fc1e9.jpg",
       "_app/immutable/assets/isabang2.c551eaf3.jpg",
-      "_app/immutable/assets/blacklabel.a38181f0.jpg",
+      "_app/immutable/assets/blacklabel.6e8517fb.jpg",
       "_app/immutable/assets/alevel.c64aa762.jpg",
       "_app/immutable/assets/classeum.3fee3df6.jpg",
       "_app/immutable/assets/goldclass.c8a0ea72.jpg",
@@ -497,7 +254,7 @@
       "_app/immutable/assets/calendar.c4172ece.jpg",
       "_app/immutable/assets/js.eb3e8b64.jpg",
       "_app/immutable/assets/isabang.988ece91.jpg",
-      "_app/immutable/assets/jejuchanga.0062a899.jpg",
+      "_app/immutable/assets/jejuchanga.769e5cec.jpg",
       "_app/immutable/assets/stake.b4ea4f31.jpg",
       "_app/immutable/assets/lotto.fe8099ca.jpg",
       "_app/immutable/assets/flowercake.c34bca24.jpg",
@@ -517,23 +274,72 @@
       "_app/immutable/assets/makefly.9f120195.jpg",
       "_app/immutable/assets/kanghan.97e7d943.jpg",
       "_app/immutable/assets/implant.72e4e9f5.jpg",
-      "_app/immutable/assets/24fly.daca89ed.jpg"
+      "_app/immutable/assets/24fly.daca89ed.jpg",
+      "_app/immutable/assets/Montserrat-vf.9aeb30a5.woff",
+      "_app/immutable/assets/Pretendard-vf.db0916f0.woff2"
     ],
     "css": [
-      "_app/immutable/assets/_page.7f0aa3b0.css"
+      "_app/immutable/assets/_page.ec39bd05.css",
+      "_app/immutable/assets/common.7b90fd04.css"
     ],
     "file": "entries/pages/_page.svelte.js",
     "imports": [
-      "_ssr.js",
-      "_utils.js"
+      "_ssr.js"
     ],
     "isEntry": true,
     "src": "src/routes/+page.svelte"
   },
   "src/routes/api/lists/+server.js": {
+    "dynamicImports": [
+      "src/routes/list/24fly.md",
+      "src/routes/list/afly.md",
+      "src/routes/list/airclean.md",
+      "src/routes/list/alevel.md",
+      "src/routes/list/bjp.md",
+      "src/routes/list/blacklabel.md",
+      "src/routes/list/calendar.md",
+      "src/routes/list/chart.md",
+      "src/routes/list/chungin.md",
+      "src/routes/list/classeum.md",
+      "src/routes/list/corevac.md",
+      "src/routes/list/cpa.md",
+      "src/routes/list/evlabs.md",
+      "src/routes/list/fastdealer.md",
+      "src/routes/list/fasthunter.md",
+      "src/routes/list/fasttrack.md",
+      "src/routes/list/finco.md",
+      "src/routes/list/flowercake.md",
+      "src/routes/list/fullpage.md",
+      "src/routes/list/goldclass.md",
+      "src/routes/list/hankyung.md",
+      "src/routes/list/hersit.md",
+      "src/routes/list/implant.md",
+      "src/routes/list/isabang.md",
+      "src/routes/list/isabang2.md",
+      "src/routes/list/isabang3.md",
+      "src/routes/list/isearch.md",
+      "src/routes/list/jamong.md",
+      "src/routes/list/jejuchanga.md",
+      "src/routes/list/kanghan.md",
+      "src/routes/list/lawadviser.md",
+      "src/routes/list/license.md",
+      "src/routes/list/linefly.md",
+      "src/routes/list/lotto.md",
+      "src/routes/list/makefly.md",
+      "src/routes/list/mentor.md",
+      "src/routes/list/petfly.md",
+      "src/routes/list/playup.md",
+      "src/routes/list/publing.md",
+      "src/routes/list/pyeongtaek.md",
+      "src/routes/list/slimcare.md",
+      "src/routes/list/sort.md",
+      "src/routes/list/stake.md",
+      "src/routes/list/swiper.md",
+      "src/routes/list/template01.md",
+      "src/routes/list/todo.md"
+    ],
     "file": "entries/endpoints/api/lists/_server.js",
     "imports": [
-      "_utils.js",
       "_index.js"
     ],
     "isEntry": true,
@@ -546,10 +352,6 @@
     ],
     "isDynamicEntry": true,
     "src": "src/routes/list/24fly.md"
-  },
-  "src/routes/list/[slug]/+page.css": {
-    "file": "_app/immutable/assets/_page.1a35df07.css",
-    "src": "src/routes/list/[slug]/+page.css"
   },
   "src/routes/list/[slug]/+page.js": {
     "dynamicImports": [
@@ -605,57 +407,6 @@
     "src": "src/routes/list/[slug]/+page.js"
   },
   "src/routes/list/[slug]/+page.svelte": {
-    "assets": [
-      "_app/immutable/assets/template01_view.7ba47da5.webp",
-      "_app/immutable/assets/isabang3_view.3837d08a.webp",
-      "_app/immutable/assets/fasttrack_view.4f3f9a88.webp",
-      "_app/immutable/assets/petfly_view.79a97290.webp",
-      "_app/immutable/assets/evlabs_view.5a287b8a.webp",
-      "_app/immutable/assets/isabang2_view.f642df79.webp",
-      "_app/immutable/assets/blacklabel_view.023041b9.webp",
-      "_app/immutable/assets/alevel_view.6db03a9f.webp",
-      "_app/immutable/assets/classeum_view.c136c421.webp",
-      "_app/immutable/assets/goldclass_view.ddfe6e82.webp",
-      "_app/immutable/assets/slimcare_view.877c3128.webp",
-      "_app/immutable/assets/corevac_view.2316d6cb.webp",
-      "_app/immutable/assets/fastdealer_view.97796d91.webp",
-      "_app/immutable/assets/fasthunter_view.bea42fc0.webp",
-      "_app/immutable/assets/airclean_view.7f56f4ff.webp",
-      "_app/immutable/assets/chart_view.6af3f10f.webp",
-      "_app/immutable/assets/isabang_view.9310b79f.webp",
-      "_app/immutable/assets/jejuchanga_view.52d411ae.webp",
-      "_app/immutable/assets/stake_view.0927ddfa.webp",
-      "_app/immutable/assets/lotto_view.994e5b35.webp",
-      "_app/immutable/assets/flowercake_view.21487a2b.webp",
-      "_app/immutable/assets/calendar_view.30b1ef8a.webp",
-      "_app/immutable/assets/todo_view.a076baff.webp",
-      "_app/immutable/assets/afly_view.b62f53a5.webp",
-      "_app/immutable/assets/bjp_view.111c0642.webp",
-      "_app/immutable/assets/finco_view.3fa75a11.webp",
-      "_app/immutable/assets/fullpage_view.f4851309.webp",
-      "_app/immutable/assets/license_view.d36cdfba.webp",
-      "_app/immutable/assets/jamong_view.37863c50.webp",
-      "_app/immutable/assets/playup_view.f52603d6.webp",
-      "_app/immutable/assets/pyeongtaek_view.9280895f.webp",
-      "_app/immutable/assets/sort_view.94d899eb.webp",
-      "_app/immutable/assets/swiper_view.81b064e2.webp",
-      "_app/immutable/assets/publing_view.454f5fad.webp",
-      "_app/immutable/assets/hersit_view.9fbba929.webp",
-      "_app/immutable/assets/hankyung_view.4706acce.webp",
-      "_app/immutable/assets/mentor_view.0556e231.webp",
-      "_app/immutable/assets/lawadviser_view.c88416e5.webp",
-      "_app/immutable/assets/isearch_view.ff7ab3d6.webp",
-      "_app/immutable/assets/cpa_view.47484071.webp",
-      "_app/immutable/assets/makefly_view.5834ce34.webp",
-      "_app/immutable/assets/linefly_view.9dcf9fe0.webp",
-      "_app/immutable/assets/kanghan_view.b28c109e.webp",
-      "_app/immutable/assets/implant_view.a2c990e6.webp",
-      "_app/immutable/assets/chungin_view.fbae9e11.webp",
-      "_app/immutable/assets/24fly_view.b2db7f17.webp"
-    ],
-    "css": [
-      "_app/immutable/assets/_page.1a35df07.css"
-    ],
     "file": "entries/pages/list/_slug_/_page.svelte.js",
     "imports": [
       "_ssr.js"

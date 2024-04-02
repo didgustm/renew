@@ -26,16 +26,21 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
+          ["@fortawesome/free-brands-svg-icons", "npm:6.5.1"],\
+          ["@fortawesome/free-solid-svg-icons", "npm:6.5.1"],\
           ["@studio-freight/lenis", "npm:1.0.29"],\
           ["@sveltejs/adapter-auto", "virtual:c56b46d83dc705f61d645efafd50b5dd10b694a413a2075f2bfa433bbaa41df431f824c0f747468efbf1694d7d2f15adbae617c2c5c3f6b6e0b1978b92526b7c#npm:2.1.1"],\
           ["@sveltejs/adapter-netlify", "virtual:c56b46d83dc705f61d645efafd50b5dd10b694a413a2075f2bfa433bbaa41df431f824c0f747468efbf1694d7d2f15adbae617c2c5c3f6b6e0b1978b92526b7c#npm:3.0.1"],\
           ["@sveltejs/adapter-static", "virtual:c56b46d83dc705f61d645efafd50b5dd10b694a413a2075f2bfa433bbaa41df431f824c0f747468efbf1694d7d2f15adbae617c2c5c3f6b6e0b1978b92526b7c#npm:2.0.3"],\
           ["@sveltejs/kit", "virtual:c56b46d83dc705f61d645efafd50b5dd10b694a413a2075f2bfa433bbaa41df431f824c0f747468efbf1694d7d2f15adbae617c2c5c3f6b6e0b1978b92526b7c#npm:1.27.6"],\
           ["gsap", "npm:3.12.2"],\
+          ["matter-js", "npm:0.19.0"],\
           ["mdsvex", "virtual:c56b46d83dc705f61d645efafd50b5dd10b694a413a2075f2bfa433bbaa41df431f824c0f747468efbf1694d7d2f15adbae617c2c5c3f6b6e0b1978b92526b7c#npm:0.11.0"],\
           ["sass", "npm:1.69.5"],\
           ["svelte", "npm:4.2.7"],\
+          ["svelte-fa", "virtual:c56b46d83dc705f61d645efafd50b5dd10b694a413a2075f2bfa433bbaa41df431f824c0f747468efbf1694d7d2f15adbae617c2c5c3f6b6e0b1978b92526b7c#npm:4.0.2"],\
           ["svelte-preprocess", "virtual:c56b46d83dc705f61d645efafd50b5dd10b694a413a2075f2bfa433bbaa41df431f824c0f747468efbf1694d7d2f15adbae617c2c5c3f6b6e0b1978b92526b7c#npm:5.1.1"],\
+          ["swiper", "npm:11.1.0"],\
           ["vite", "virtual:c56b46d83dc705f61d645efafd50b5dd10b694a413a2075f2bfa433bbaa41df431f824c0f747468efbf1694d7d2f15adbae617c2c5c3f6b6e0b1978b92526b7c#npm:4.5.0"]\
         ],\
         "linkType": "SOFT"\
@@ -418,6 +423,35 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../AppData/Local/Yarn/Berry/cache/@fastify-busboy-npm-2.1.0-960844a007-10c0.zip/node_modules/@fastify/busboy/",\
         "packageDependencies": [\
           ["@fastify/busboy", "npm:2.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@fortawesome/fontawesome-common-types", [\
+      ["npm:6.5.1", {\
+        "packageLocation": "./.yarn/unplugged/@fortawesome-fontawesome-common-types-npm-6.5.1-1efaf0654d/node_modules/@fortawesome/fontawesome-common-types/",\
+        "packageDependencies": [\
+          ["@fortawesome/fontawesome-common-types", "npm:6.5.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@fortawesome/free-brands-svg-icons", [\
+      ["npm:6.5.1", {\
+        "packageLocation": "./.yarn/unplugged/@fortawesome-free-brands-svg-icons-npm-6.5.1-4909283c6b/node_modules/@fortawesome/free-brands-svg-icons/",\
+        "packageDependencies": [\
+          ["@fortawesome/free-brands-svg-icons", "npm:6.5.1"],\
+          ["@fortawesome/fontawesome-common-types", "npm:6.5.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@fortawesome/free-solid-svg-icons", [\
+      ["npm:6.5.1", {\
+        "packageLocation": "./.yarn/unplugged/@fortawesome-free-solid-svg-icons-npm-6.5.1-f35995a54f/node_modules/@fortawesome/free-solid-svg-icons/",\
+        "packageDependencies": [\
+          ["@fortawesome/free-solid-svg-icons", "npm:6.5.1"],\
+          ["@fortawesome/fontawesome-common-types", "npm:6.5.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1667,6 +1701,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["matter-js", [\
+      ["npm:0.19.0", {\
+        "packageLocation": "../../AppData/Local/Yarn/Berry/cache/matter-js-npm-0.19.0-b2adf03ecc-10c0.zip/node_modules/matter-js/",\
+        "packageDependencies": [\
+          ["matter-js", "npm:0.19.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["mdn-data", [\
       ["npm:2.0.30", {\
         "packageLocation": "../../AppData/Local/Yarn/Berry/cache/mdn-data-npm-2.0.30-bf7b39c09a-10c0.zip/node_modules/mdn-data/",\
@@ -2333,6 +2376,28 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["svelte-fa", [\
+      ["npm:4.0.2", {\
+        "packageLocation": "../../AppData/Local/Yarn/Berry/cache/svelte-fa-npm-4.0.2-6cd75fb55b-10c0.zip/node_modules/svelte-fa/",\
+        "packageDependencies": [\
+          ["svelte-fa", "npm:4.0.2"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:c56b46d83dc705f61d645efafd50b5dd10b694a413a2075f2bfa433bbaa41df431f824c0f747468efbf1694d7d2f15adbae617c2c5c3f6b6e0b1978b92526b7c#npm:4.0.2", {\
+        "packageLocation": "./.yarn/__virtual__/svelte-fa-virtual-5c6ccfcf85/3/AppData/Local/Yarn/Berry/cache/svelte-fa-npm-4.0.2-6cd75fb55b-10c0.zip/node_modules/svelte-fa/",\
+        "packageDependencies": [\
+          ["svelte-fa", "virtual:c56b46d83dc705f61d645efafd50b5dd10b694a413a2075f2bfa433bbaa41df431f824c0f747468efbf1694d7d2f15adbae617c2c5c3f6b6e0b1978b92526b7c#npm:4.0.2"],\
+          ["@types/svelte", null],\
+          ["svelte", "npm:4.2.7"]\
+        ],\
+        "packagePeers": [\
+          "@types/svelte",\
+          "svelte"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["svelte-hmr", [\
       ["npm:0.15.3", {\
         "packageLocation": "../../AppData/Local/Yarn/Berry/cache/svelte-hmr-npm-0.15.3-e69f891d87-10c0.zip/node_modules/svelte-hmr/",\
@@ -2416,6 +2481,15 @@ const RAW_RUNTIME_STATE =
           "sugarss",\
           "svelte",\
           "typescript"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["swiper", [\
+      ["npm:11.1.0", {\
+        "packageLocation": "../../AppData/Local/Yarn/Berry/cache/swiper-npm-11.1.0-f05fa79b37-10c0.zip/node_modules/swiper/",\
+        "packageDependencies": [\
+          ["swiper", "npm:11.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2569,16 +2643,21 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["vite-project", "workspace:."],\
+          ["@fortawesome/free-brands-svg-icons", "npm:6.5.1"],\
+          ["@fortawesome/free-solid-svg-icons", "npm:6.5.1"],\
           ["@studio-freight/lenis", "npm:1.0.29"],\
           ["@sveltejs/adapter-auto", "virtual:c56b46d83dc705f61d645efafd50b5dd10b694a413a2075f2bfa433bbaa41df431f824c0f747468efbf1694d7d2f15adbae617c2c5c3f6b6e0b1978b92526b7c#npm:2.1.1"],\
           ["@sveltejs/adapter-netlify", "virtual:c56b46d83dc705f61d645efafd50b5dd10b694a413a2075f2bfa433bbaa41df431f824c0f747468efbf1694d7d2f15adbae617c2c5c3f6b6e0b1978b92526b7c#npm:3.0.1"],\
           ["@sveltejs/adapter-static", "virtual:c56b46d83dc705f61d645efafd50b5dd10b694a413a2075f2bfa433bbaa41df431f824c0f747468efbf1694d7d2f15adbae617c2c5c3f6b6e0b1978b92526b7c#npm:2.0.3"],\
           ["@sveltejs/kit", "virtual:c56b46d83dc705f61d645efafd50b5dd10b694a413a2075f2bfa433bbaa41df431f824c0f747468efbf1694d7d2f15adbae617c2c5c3f6b6e0b1978b92526b7c#npm:1.27.6"],\
           ["gsap", "npm:3.12.2"],\
+          ["matter-js", "npm:0.19.0"],\
           ["mdsvex", "virtual:c56b46d83dc705f61d645efafd50b5dd10b694a413a2075f2bfa433bbaa41df431f824c0f747468efbf1694d7d2f15adbae617c2c5c3f6b6e0b1978b92526b7c#npm:0.11.0"],\
           ["sass", "npm:1.69.5"],\
           ["svelte", "npm:4.2.7"],\
+          ["svelte-fa", "virtual:c56b46d83dc705f61d645efafd50b5dd10b694a413a2075f2bfa433bbaa41df431f824c0f747468efbf1694d7d2f15adbae617c2c5c3f6b6e0b1978b92526b7c#npm:4.0.2"],\
           ["svelte-preprocess", "virtual:c56b46d83dc705f61d645efafd50b5dd10b694a413a2075f2bfa433bbaa41df431f824c0f747468efbf1694d7d2f15adbae617c2c5c3f6b6e0b1978b92526b7c#npm:5.1.1"],\
+          ["swiper", "npm:11.1.0"],\
           ["vite", "virtual:c56b46d83dc705f61d645efafd50b5dd10b694a413a2075f2bfa433bbaa41df431f824c0f747468efbf1694d7d2f15adbae617c2c5c3f6b6e0b1978b92526b7c#npm:4.5.0"]\
         ],\
         "linkType": "SOFT"\
